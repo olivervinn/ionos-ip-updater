@@ -1,0 +1,10 @@
+version: "2"
+services:
+  ipupdater:
+    restart: unless-stopped
+    build:
+      context: ./src
+    container_name: ipupdater
+    environment: 
+      - USERNAME=
+      - PASSWORD=
